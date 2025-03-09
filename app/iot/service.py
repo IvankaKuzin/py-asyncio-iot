@@ -11,7 +11,8 @@ def generate_id(length: int = 8) -> str:
 
 # Protocol is very similar to ABC, but uses duck typing
 # so devices should not inherit for it
-# (if it walks like a duck, and quacks like a duck, it's a duck)
+# (if it walks like a duck, and quacks like
+# a duck, it's a duck)
 class Device(Protocol):
     async def connect(self) -> None:
         # Ellipsis - similar to "pass",
